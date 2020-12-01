@@ -1,0 +1,110 @@
+header {
+    height: 300px;
+    background-image: url("../images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+header h2 {
+    margin: 15px 0
+}
+header form {
+margin: 20px 0;
+width: 70%;
+position: relative;
+}
+header form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0px 10px ;
+}
+header form input::placeholder {
+   margin:0 10px;
+}
+header form .submit-btn {
+    content: ">";
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 10px 10px 0px;
+    background: black;
+    color:white;
+    position: absolute;
+    top: 0;
+    right: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+}
+.info-area {
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    height:300px;
+    top:calc( 100% - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    z-index: 2;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 90%;
+}
+.info-item {
+    text-align: center;
+    color:hsl(0, 0%, 59%);
+}
+.info-item p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+    color: black;
+}
+
+#myMap { 
+    height: 65vh;
+    width: 100%;
+    z-index: 0;
+}
+/* .info-container >* {
+ border: ;
+} */
+
+@media (min-width:680px) {
+    header {
+        /* height: 35vh; */
+        justify-content: center;
+    }
+ 
+    .info-container {
+        flex-direction: row;
+    }
+    .info-area {
+        height: 150px;
+        top:calc(100% - 75px);
+        justify-content: space-evenly;
+    }
+    .info-area .info-item {
+        border-right: 1px solid grey;
+        width: 25%;
+    }
+    .info-area .info-item:last-child{
+        border: none;
+    }
+}
