@@ -35,7 +35,7 @@ function getingAPI() {
     tiles.addTo(mymap)
     //stating API URL
     let api_for_ip="https://geo.ipify.org/api/v1?apiKey=at_C6EPXDtLEJ8aCnJ0RSqqnykUbEg2g";
-    let api_for_time="http://worldtimeapi.org/api/ip/";
+    let api_for_time="https://worldtimeapi.org/api/ip/";
     //iniliazed marker for map
     const marker = L.marker([0,0]).addTo(mymap);
    
